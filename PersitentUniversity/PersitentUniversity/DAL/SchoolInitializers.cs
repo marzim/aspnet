@@ -21,12 +21,12 @@ namespace PersitentUniversity.DAL
         {
             var students = new List<Student>
             {
-                new Student {FirstName="test1",LastName="lastname1",EnrollmentDate=DateTime.Parse("2001-01-01") },
-                new Student {FirstName="test2",LastName="lastname2",EnrollmentDate=DateTime.Parse("2002-01-01") },
-                new Student {FirstName="test3",LastName="lastname3",EnrollmentDate=DateTime.Parse("2003-01-01") },
-                new Student {FirstName="test4",LastName="lastname4",EnrollmentDate=DateTime.Parse("2004-01-01") },
-                new Student {FirstName="test5",LastName="lastname5",EnrollmentDate=DateTime.Parse("2005-01-01") },
-                new Student {FirstName="test6",LastName="lastname6",EnrollmentDate=DateTime.Parse("2006-01-01") }
+                new Student {FirstName="test1",LastName="lastname1",EnrollmentDate=DateTime.Parse("2001-01-01"), EmailAddress="sampel@gmail.com", ContactNumber="83747383" },
+                new Student {FirstName="test2",LastName="lastname2",EnrollmentDate=DateTime.Parse("2002-01-01"), EmailAddress="sampel2@gmail.com", ContactNumber="83747383" },
+                new Student {FirstName="test3",LastName="lastname3",EnrollmentDate=DateTime.Parse("2003-01-01"), EmailAddress="sampel3@gmail.com", ContactNumber="83747383" },
+                new Student {FirstName="test4",LastName="lastname4",EnrollmentDate=DateTime.Parse("2004-01-01"), EmailAddress="sampel4@gmail.com", ContactNumber="83747383" },
+                new Student {FirstName="test5",LastName="lastname5",EnrollmentDate=DateTime.Parse("2005-01-01"), EmailAddress="sampel5@gmail.com", ContactNumber="83747383" },
+                new Student {FirstName="test6",LastName="lastname6",EnrollmentDate=DateTime.Parse("2006-01-01"), EmailAddress="sampel6@gmail.com", ContactNumber="83747383" }
             };
             students.ForEach(s => context.Students.Add(s));
             context.SaveChanges();

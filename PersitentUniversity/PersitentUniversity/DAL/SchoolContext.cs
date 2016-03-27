@@ -8,7 +8,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace PersitentUniversity.DAL
 {
-    public class SchoolContext:DbContext
+    public class SchoolContext : DbContext
     {
         public SchoolContext() : base("SchoolContext")
         {

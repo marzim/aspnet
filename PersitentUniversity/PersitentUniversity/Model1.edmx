@@ -53,8 +53,9 @@
           <Property Name="FirstName" Type="String" Nullable="false" />
           <Property Name="LastName" Type="String" Nullable="false" />
           <Property Name="EnrollmentDate" Type="String" Nullable="false" />
-          <Property Name="Property1" Type="String" Nullable="false" />
+          <Property Name="EmailAddress" Type="String" Nullable="false" />
           <NavigationProperty Name="Enrollments" Relationship="Model1.StudentEnrollments" FromRole="Student" ToRole="Enrollments" />
+          <Property Name="ContactNumber" Type="String" Nullable="false" />
         </EntityType>
         <Association Name="CourseEnrollments">
           <End Type="Model1.Course" Role="Course" Multiplicity="1" />
